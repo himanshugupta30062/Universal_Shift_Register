@@ -31,10 +31,7 @@ architecture behavior of USR is
             A_reg <= '0';
           
           when "01" =>  -- Shift Right
-            -- Be sure to note data types and syntax
             A_reg(data_width - 1) <= '0';
-            
-            -- Use the left shift as a reference
             A_reg(data_width - 2 downto 0) <= A_reg(data_width - 1 downto 1);
             
           when "10" =>  -- Shift Left
@@ -45,8 +42,7 @@ architecture behavior of USR is
             A_reg(0) <= I;
             
           when others =>  -- Error Code
-            A_reg <= (others => 'X');
-            
+            A_reg <= (others => 'X');  
         end case;
       end if;
     end if;
