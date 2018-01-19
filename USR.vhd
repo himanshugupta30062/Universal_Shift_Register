@@ -2,11 +2,11 @@
 -- File:	      USR.vhd
 -- Engineer:	  Oscar Cairoli
 -- Description: A Universal Shift Register
--- OS:		      Linux (Ubuntu) Terminal Command Lines with Digilent Adept and Basys2 FPGA:
---		$ djtgcfg enum						                        // The "enum" command enumerates the devices (-d)
---		$ djtgcfg init -d Basys2                        	// The "init" command initializes the device for use
---		$ djtgcfg prog -d Basys2 -i 0 -f USR.bit		      // The "prog" command programs an interface (-i) on 
--- 									                                    // a device (-d) with the .bit file (-f)
+-- OS:		   Linux (Ubuntu) Terminal Command Lines with Digilent Adept and Basys2 FPGA:
+--		$ djtgcfg enum						                     // The "enum" command enumerates the devices (-d)
+--		$ djtgcfg init -d Basys2                       // The "init" command initializes the device for use
+--		$ djtgcfg prog -d Basys2 -i 0 -f USR.bit		   // The "prog" command programs an interface (-i) on 
+-- 									                                 // a device (-d) with the .bit file (-f)
 ----------------------------------------------------------------------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;
